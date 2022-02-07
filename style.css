@@ -1,0 +1,302 @@
+
+        /*********** reset css ***********/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f6f6f6;
+    width: 100%;
+}
+        /*********** font size ***********/
+h1{ font-size: 60px;}
+
+#titre h2{ 
+    font-size: 40px; font-weight: 100;
+    font-family:'Times New Roman', Times, serif
+}
+#titre h3 {
+    font-weight: lighter;
+    font-family: serif;
+}
+article h3 { font-size: 30px;}
+
+.red {color: #a22755;}
+.red:hover {color: #ccc;}
+span { color: #38b4b4; line-height: 30px;}
+i { color: #aaa;}
+        /*********** background ***********/
+
+
+#background {
+    background-image: url(img/bkgd_page.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1050px; 
+}
+
+#contenu {
+    max-width: 1024px;
+    margin: auto;   
+}
+
+main{
+    background-color: #f6f6f6;
+}
+
+        /********* header ************/
+
+        /******** navigation **********/
+header{ 
+    color: white;
+    padding: 30px 0 50px;
+}
+
+nav {
+    display: flex;                      
+    flex-direction: row;                
+    justify-content: space-between;
+}
+#logo {
+    background-image: url(img/logo.png);
+    background-size: cover;
+    width: 159px;
+    height: 67px;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}       
+td {
+    border: 1px dashed white;
+    padding: 10px 20px ;
+}
+td > a{ color: white;}
+
+td:hover {background-color: #f6f6f6;}
+td:hover a{color: #305a47;}
+
+        /******** titre ***********/
+
+#titre {
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+        /******** articles *********/
+
+#contenu2 {
+    /* margin:50px 0; */
+    display: flex;                      
+    flex-direction: row;                
+    width: 100%;
+    height: 630px;
+}
+section {
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+}
+article {
+    padding: 20px;
+    height: 273px;
+    display: flex;                     
+    flex-direction: row;                
+}
+.photo { 
+    width: 370px;
+    height: 273px;
+    border: 1px solid black;
+}
+.photo:hover {opacity: 0.5;}
+
+.txt {padding: 5px;}
+
+aside {
+    flex-grow: 1;
+    flex-direction: row;                
+    justify-content: center;            
+    text-align: center;
+}
+.rapport {
+    margin-top: 50px;   
+}
+
+        /* images */
+
+#contenu3 {
+    display:flex;                       
+    flex-direction: row;                
+    justify-content: space-between;
+    margin: 100px 20px;
+}
+#element1{
+    background-image: url(img/saut.jpg);
+    background-size: cover;
+    width: 480px;
+    height: 480px;
+}
+#element1:hover #saut {
+    display: flex;
+}
+#saut {
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+    background-color: rgba(0,0,0,0.5);
+}
+#saut button {
+    width: 260px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0c7f06;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+#saut h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+#saut button:hover {
+    color:white;
+    background-color:#305a47;
+    opacity: 0.8;
+}
+#element2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 476px;
+    height: 476px;
+    background-color: #ddeae4;
+    border: 2px solid #305a47;
+}
+.box {
+    width: 234px;
+    height: 234px;
+    border: 2px solid #305a47;
+    text-align: center;
+}
+.box img {
+    margin-top: 30px;
+}
+
+        /********* formulaire ***********/
+legend{ font-size: 20px;}
+
+#form {
+    max-width: 975px;
+    max-height: 476px;
+    border: 4px solid #305a47;
+    background-color: #ddeae4;
+    margin: 100px 20px; 
+    padding: 60px;
+}
+form {
+    width: 476px;
+    height: 330px;
+    margin: 0 auto;
+}
+.f_size1 {
+    margin: 5px 0 0;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+.f_size2 {
+    margin: 5px 0 0;
+    width: 235px; 
+    box-sizing: border-box;
+    padding: 10px;
+}
+textarea{
+    margin: 5px 0 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 10px;
+}
+form button {
+    background-color: #305a47;
+    color: #ddeae4;
+}
+
+        /********* footer ************/
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #305a47;
+    height: 50px;
+    bottom: 0px;
+    text-align: center;
+}
+li {
+    margin: 15px;
+    display: inline;
+}
+footer li a {
+    color: white; 
+    font-size: 12px; 
+
+}
+
+ /* responsive */
+
+ @media only screen and (max-width: 1016px) {
+    #background{
+        background-size:inherit;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #menu{
+        margin-left: 20px;
+    }
+    #contenu{
+        width: 100%;
+    }
+    #contenu2{
+        flex-wrap: wrap;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #element1{
+        margin-top: 400px;
+        margin-bottom: 20px;
+    }
+    #contenu3{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    #form{
+        width: 80%;
+        margin: 20 0 auto;
+        padding: auto;
+    }
+    .f_size1 .f_size2{
+        padding: auto;
+        padding: auto;
+    }
+  }
+  /* responsive j'usqu'a une largeur de 710px */
+
+  /* @media only screen and (max-width: 710px) {
+    #background{
+
+    } */
+
+
+
+
